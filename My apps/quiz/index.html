@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <link rel="icon" href="./images/quiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="head">
+        <div class="container">
+            <div class="navbar">
+                <a href="../index.html" class="logo">
+                    <img src="../images/logo.png" alt="My apps" width="40px" height="40px">
+                    <span>My&nbspApps</span>
+                </a>
+
+                <nav>
+                    <ul class="nav-items">
+                        <li class="active">
+                            <a href="../quiz/index.html" class="quiz">Quiz</a>
+                        </li>
+                            
+                        <li>
+                            <a href="../todo/index.html" class="todo">ToDo</a>
+                        </li> <!-- end of todo-->
+                        
+                        <li>
+                            <a href="../bud/index.html" class="budget">Budget Manager</a>
+                        </li> <!-- end of budget-->
+                        
+                        <li>
+                            <a href="../progress/index.html" class="kanban">Progress Board</a>
+                        </li> <!-- end of news-->
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="listAnimation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="quizapp">
+                <div class="heading-quiz">
+                    <p class="title">Daily's Quiz App</p>
+                    <p class="subtitle">To Test your knowledge daily? Let's Play</p>
+                </div>
+                <div class="result hide">
+                    <p></p>
+                    <p class="reload">
+                        <button onclick="document.location.reload(true)">Try Again ?</button>
+                    </p>
+                </div>
+
+                <form class="quiz-form">
+                    <div class="question">
+                        <p>1. Javascript is an _______ language?</p>
+                        <div class="option">
+                            <input type="radio" name="q1" value="A" checked>
+                            <label for="">Object-Oriented</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" value="B">
+                            <label for="">Object-Based</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" value="C">
+                            <label for="">Procedural</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" value="D">
+                            <label for="">None of the above</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>2. Which of the following keywords is used to define a variable in Javascript?</p>
+                        <div class="option">
+                            <input type="radio" name="q2" value="A" checked>
+                            <label for="">var</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" value="B">
+                            <label for="">let</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" value="C">
+                            <label for="">Both A and B</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" value="D">
+                            <label for="">None of the above</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>3. Upon encountering empty statements, what does the Javascript Interpreter do?</p>
+                        <div class="option">
+                            <input type="radio" name="q3" value="A" checked>
+                            <label for="">Throws an error</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" value="B">
+                            <label for="">Ignores the statements</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" value="C">
+                            <label for="">Gives a warning</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" value="D">
+                            <label for="">None of the above</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>4. What is the use of the &lt;noscript&gt; tag in Javascript?</p>
+                        <div class="option">
+                            <input type="radio" name="q4" value="A" checked>
+                            <label for="">The contents are displayed by non-JS-based browsers.</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" value="B">
+                            <label for="">Clears all the cookies and cache.</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" value="C">
+                            <label for="">Both A and B.</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" value="D">
+                            <label for="">None of the above.</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>5. When an operator's value is NULL, the typeof returned by the unary operator is:</p>
+                        <div class="option">
+                            <input type="radio" name="q5" value="A" checked>
+                            <label for="">Boolean</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" value="B">
+                            <label for="">Undefined</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" value="C">
+                            <label for="">Object</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" value="D">
+                            <label for="">Integer</label>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>&copy My Apps by Author.</span>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/pavithran-v-656201298/"><i class="bi bi-linkedin social" title="Linkedin"></i></a>
+                    <a href="https://github.com/PavithranV17"><i class="bi bi-github social" title="Github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="model">
+            <div class="popup">
+                <p>Join Newsletter</p>
+                <form>
+                    <input type="text" placeholder="Name" autocomplete="off">
+                    <input type="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../main.js" ></script>
+    <script src="./index.js"></script>
+</body>
+</html>

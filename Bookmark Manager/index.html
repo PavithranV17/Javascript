@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+
+                <section class="heading">
+                    <p class="title">Bookmark Manager</p>
+                    <p class="subtitle">A house of web addresses</p>
+                </section> <!-- end of heading section -->
+
+                <section class="create">
+                    <form class="add">
+                        <input type="text" placeholder="Link" id="link" autocomplete="off" name="link">
+                        <input type="text" placeholder="Title" autocomplete="off" name="title" maxlength="30">
+                        <select name="category">
+                            <option value="youtube">YouTube</option>
+                            <option value="prime">Prime</option>
+                            <option value="hotstar">Hotstar</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="submit" value="Bookmark" id="bookmark-button">
+                    </form>
+                </section> <!-- end of create class -->
+
+                <section class="bookmark">
+                    <div class="category-list">
+                        <span class="active">All</span>
+                        <span>YouTube</span>
+                        <span>Prime</span>
+                        <span>Hotstar</span>
+                        <span>Others</span>
+                    </div>
+
+                    <div class="cards">
+                        <!-- html tag is added in js file -->
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./index.js" ></script>
+</body>
+</html>

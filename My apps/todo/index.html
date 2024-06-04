@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+
+    <link rel="icon" href="./images/to-do-list.png" type="image/x-icon">
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="head">
+        <div class="container">
+            <div class="navbar">
+                <a href="../index.html" class="logo">
+                    <img src="../images/logo.png" alt="My apps" width="40px" height="40px">
+                    <span>My&nbspApps</span>
+                </a>
+
+                <nav>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="../quiz/index.html" class="quiz">Quiz</a>
+                        </li>
+                            
+                        <li class="active">
+                            <a href="../todo/index.html" class="todo">ToDo</a>
+                        </li> <!-- end of todo-->
+                        
+                        <li>
+                            <a href="../bud/index.html" class="budget">Budget Manager</a>
+                        </li> <!-- end of budget-->
+                        
+                        <li>
+                            <a href="../progress/index.html" class="kanban">Progress Board</a>
+                        </li> <!-- end of news-->
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="listAnimation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <section class="heading">
+                <p class="title">ToDo App</p>
+                <p class="subtitle">Manage Your Daily Activities</p>
+            </section>
+
+            <section class="task-manager">
+                <div class="search-box">
+                    <form class="search">
+                        <input type="text" name="search_input" placeholder="search task" autocomplete="off">
+                        <i class="bi bi-x-circle reset"></i>
+                    </form>
+                </div>
+                
+                <div class="task-box">
+                    <ul class="tasks">
+                        <li>
+                            <span>Learn javascript</span>
+                            <i class="bi bi-trash delete"></i>
+                        </li>
+                    </ul>
+                    <form class="add">
+                        <input type="text" name="task" placeholder="Add Task" autocomplete="off">
+                        <input type="submit" value="Add">
+                    </form>
+                </div>
+
+                <div class="message">
+                    <span></span>
+                    <button class="clear">Clear All</button>
+                </div>
+            </section>
+        </div>
+
+    </main>    
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>&copy My Apps by Author.</span>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/pavithran-v-656201298/"><i class="bi bi-linkedin social" title="Linkedin"></i></a>
+                    <a href="https://github.com/PavithranV17"><i class="bi bi-github social" title="Github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="model">
+            <div class="popup">
+                <p>Join Newsletter</p>
+                <form>
+                    <input type="text" placeholder="Name" autocomplete="off">
+                    <input type="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../main.js" ></script>
+    <script src="./index.js"></script>
+</body>
+</html>
