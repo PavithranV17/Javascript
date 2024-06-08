@@ -3,9 +3,9 @@ const category = document.querySelector(".category");
 
 const noImg = "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
-// const url = "https://newsapi.org/v2/everything?q=tesla&from=2024-04-20&sortBy=publishedAt&apiKey=fb68f178b7cd46ca8f41b9a9fc671783";
+// const url = "https://newsapi.org/v2/everything?q=tesla&from=2024-04-20&sortBy=publishedAtxxxxxxxxxx";
 const baseUrl = "https://newsapi.org/v2/";
-const endUrl = "&apiKey=fb68f178b7cd46ca8f41b9a9fc671783";
+const endUrl = "XXXXXXXXXXXX";
 
 async function dataReq(Url){
     try{
